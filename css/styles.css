@@ -7,6 +7,7 @@ html, body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -32,6 +33,10 @@ a:visited {
 
 nav {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -69,7 +74,7 @@ nav {
     font-size: 1.4rem;
   }
   .nav-menu li i {
-    padding: 5px;
+    padding: 15px 5px 0;
     color: #00aff0;
   }
   .nav-menu li i:hover {
@@ -89,4 +94,38 @@ nav {
     border-top: 3px solid #00aff0;
     border-bottom: 3px solid #00aff0;
   }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    margin-left: 200px;
+  }
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../../images/hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  padding-top: 20px;
+  font-size: 2.3rem;
 }

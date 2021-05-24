@@ -2,6 +2,10 @@ nav {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen and (min-width: $large-dev) {
     nav {
         display: flex;
@@ -37,7 +41,7 @@ nav {
         font-weight: 700;
         font-size: 1.4rem;
         & li i {
-            padding: 5px;
+            padding: 15px 5px 0;
             color: $colour-blue;
             &:hover {
                 color: black;
