@@ -1,2 +1,2 @@
-# html-css-reflect
-Creating a replica of the Netmatters home page using only HTML + CSS. This is part of a task given to me in a course with Netmatters.
+# Portfolio
+Creating a personal portfolio that will eventually be used to showcase my work and be used to apply for jobs. 
