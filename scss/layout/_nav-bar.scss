@@ -1,0 +1,64 @@
+nav {
+    display: none;
+}
+
+@media screen and (min-width: $large-dev) {
+    nav {
+        display: flex;
+        border-right: solid 3px $colour-blue;
+        overflow: hidden;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        & h1 {
+            font-size: 8rem;
+            color: $colour-blue;
+            width: 100%;
+            margin: 0 auto;
+            top: 0;
+            border-bottom: 3px solid $colour-blue;
+        }
+    }
+
+    .nav-menu {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin: 0;  
+        font-family: $font-default;
+        font-weight: 700;
+        font-size: 1.4rem;
+        & li i {
+            padding: 5px;
+            color: $colour-blue;
+            &:hover {
+                color: black;
+            }
+        }
+        & .fab {
+            font-size: 2.5rem;
+        }
+        }
+
+    .nav-li {
+        padding: 15px 0 15px 0;
+        &:hover {
+            background:linear-gradient($colour-blue,$colour-blue) bottom /* left or right or else */ no-repeat;
+            background-size:50% 3px
+        }
+    }
+    
+    
+    .contact-nav {
+        border-top: 3px solid $colour-blue;
+        border-bottom: 3px solid $colour-blue;
+    }
+}

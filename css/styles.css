@@ -16,7 +16,7 @@ html {
 body {
   font-size: 1rem;
   letter-spacing: .4px;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -28,4 +28,65 @@ body {
 a,
 a:visited {
   color: inherit;
+}
+
+nav {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    display: flex;
+    border-right: solid 3px #00aff0;
+    overflow: hidden;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav h1 {
+    font-size: 8rem;
+    color: #00aff0;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    border-bottom: 3px solid #00aff0;
+  }
+  .nav-menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .nav-menu li i {
+    padding: 5px;
+    color: #00aff0;
+  }
+  .nav-menu li i:hover {
+    color: black;
+  }
+  .nav-menu .fab {
+    font-size: 2.5rem;
+  }
+  .nav-li {
+    padding: 15px 0 15px 0;
+  }
+  .nav-li:hover {
+    background: linear-gradient(#00aff0, #00aff0) bottom no-repeat;
+    background-size: 50% 3px;
+  }
+  .contact-nav {
+    border-top: 3px solid #00aff0;
+    border-bottom: 3px solid #00aff0;
+  }
 }
