@@ -27,11 +27,11 @@
 
     <main>
         <!-- Main Hero Image Banner -->
-        <div class="hero"> 
+        <div class="hero" id="hero"> 
             <h1>My Name is Chris Peers</h1>
             <h2>I'm a Web Developer</h2>
             <div>
-                <a href="#">
+                <a href="#projects">
                     Scroll Down
                     <br>
                     <i class="fas fa-chevron-down"></i>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Project Section -->
-        <div class="projects">
+        <div class="projects" id="projects">
             <a class="cards card-1" href="#">
                 <img src="/images/placeholder.jpg" alt="Placeholder Image">
                 <h2>Project One</h2>
@@ -83,16 +83,17 @@
             <!-- Contact Form -->
             <form class="contact-form">
                 <input type="text" class="name" id="name" name="name" placeholder="Name*" required>
-                <input type="text" class="email" id="email" name="email" placeholder="Email Address*" required>
                 <input type="text" class="cont-number" id="cont-number" name="cont-number" placeholder="Contact Number">
+                <input type="text" class="email" id="email" name="email" placeholder="Email Address*" required>
                 <input type="text" class="subject" id="subject" name="subject" placeholder="Subject">
                 <textarea class="message" id="message" name="message" placeholder="Message*" cols="50" rows="4" required></textarea>
                 <input type="submit"  value="Submit" class="submit">
             </form>
         </section>
-        
+
+        <!-- Back to top button -->
         <section class="back-to-top">
-            <a><i class="fas fa-chevron-up">Back to Top</i></a>
+            <a href="#hero"><i class="fas fa-chevron-up"></br>Back To Top</i></a>
         </section>
 
         

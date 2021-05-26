@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   border: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -180,13 +181,12 @@ a {
 
 .cards {
   width: 90%;
-  max-width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
-  margin: 10px 5px 10px;
+  margin: 15px 15px 15px;
   overflow: hidden;
   background-color: #f4f0ec;
 }
@@ -216,7 +216,6 @@ a {
 
 .cards img {
   width: 100%;
-  max-width: 550px;
   height: auto;
 }
 
@@ -239,10 +238,11 @@ a {
 
 @media screen and (min-width: 768px) {
   .cards {
-    width: 350px;
+    width: 45%;
+    justify-content: space-between;
   }
   .card-3, .card-4, .card-5, .card-6 {
-    margin-top: 0px;
+    margin-top: 15px;
   }
 }
 
@@ -259,23 +259,21 @@ a {
     flex-grow: 1;
   }
   .card-4, .card-5, .card-6 {
-    margin-top: 0px;
+    margin-top: 15px;
   }
 }
 
 .contact-section {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
   margin-bottom: 25px;
 }
 
 .contact-me {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
@@ -302,7 +300,13 @@ a {
   width: 260px;
 }
 
+.contact-me a:hover {
+  color: #00478F;
+}
+
 .contact-form {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -313,10 +317,12 @@ a {
   font-size: 1.3rem;
   font-weight: 400;
   background-color: #eee;
-  height: 50px;
+  padding: 12px 0 12px 5px;
   margin: 10px 0px;
-  padding-left: 5px;
+  line-height: 100%;
   border: 1px solid #dcdcdc;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 .contact-form .message {
@@ -331,7 +337,61 @@ a {
 .contact-form input[type=submit] {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   width: 130px;
   height: 35px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-me {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact-me {
+    flex-grow: 1;
+    flex-basis: 35%;
+    margin-left: 15px;
+    padding-right: 10px;
+  }
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-grow: 1;
+    flex-basis: 55%;
+    margin-right: 15px;
+  }
+  #name {
+    flex-grow: 1;
+    flex-basis: 30%;
+    margin-right: 10px;
+  }
+  #cont-number {
+    flex-grow: 1;
+    flex-basis: 30%;
+  }
+  #message {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}
+
+.back-to-top {
+  width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  font-style: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
 }
