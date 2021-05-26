@@ -169,3 +169,83 @@ a {
     font-size: 4rem;
   }
 }
+
+.projects {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  width: 90%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin: 10px 5px 10px;
+  overflow: hidden;
+  background-color: #f4f0ec;
+}
+
+.cards a:hover {
+  cursor: pointer;
+}
+
+.cards h2 {
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.cards p {
+  padding: 10px 0px 10px 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.cards p:hover {
+  font-size: 1.4rem;
+}
+
+.cards img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+.cards img:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .cards h2 {
+    font-size: 3rem;
+  }
+  .cards p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .cards p:hover {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects {
+    flex-basis: 30%;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,103 @@
+.projects {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    border: 1px solid $color-greg-brdr;
+    border-radius: 4px;
+    margin: 10px 5px 10px;
+    overflow: hidden;
+    background-color: $color-grey-bg;
+
+    & a {
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+
+    & h2 {
+        padding-left: 10px;
+        font-family: $font-default;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    & p {
+        padding: 10px 0px 10px 10px;
+        font-family: $font-default;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.4rem;
+
+        &:hover {
+            font-size: 1.4rem;
+        }
+    }
+
+
+    & img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (min-width: $small-dev) and (max-width: 767px) {
+    .cards {
+        & h2 {
+            font-size: 3rem;
+        }
+
+        & p {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            &:hover {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $med-dev) {
+    .cards {
+        width: 350px;
+
+        & h2 {
+            
+        }
+
+        & p {
+            
+            &:hover {
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $large-dev) {
+
+    .projects {
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    .cards {
+
+    }
+}
