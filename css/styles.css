@@ -241,11 +241,24 @@ a {
   .cards {
     width: 350px;
   }
+  .card-3, .card-4, .card-5, .card-6 {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .projects {
+  .cards {
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
     flex-basis: 30%;
     flex-grow: 1;
+  }
+  .card-4, .card-5, .card-6 {
+    margin-top: 0px;
   }
 }
