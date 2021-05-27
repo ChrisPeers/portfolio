@@ -43,7 +43,7 @@ a {
 @media screen and (min-width: 992px) {
   nav {
     display: flex;
-    border-right: solid 3px #00aff0;
+    border-right: solid 3px #7395AE;
     overflow: hidden;
     width: 200px;
     height: 100vh;
@@ -55,11 +55,11 @@ a {
   }
   nav h1 {
     font-size: 8rem;
-    color: #00aff0;
+    color: #7395AE;
     width: 100%;
     margin: 0 auto;
     top: 0;
-    border-bottom: 3px solid #00aff0;
+    border-bottom: 3px solid #7395AE;
   }
   .nav-menu {
     list-style: none;
@@ -76,7 +76,7 @@ a {
   }
   .nav-menu li i {
     padding: 15px 5px 0;
-    color: #00aff0;
+    color: #7395AE;
   }
   .nav-menu li i:hover {
     color: black;
@@ -88,12 +88,12 @@ a {
     padding: 15px 0 15px 0;
   }
   .nav-li:hover {
-    background: linear-gradient(#00aff0, #00aff0) bottom no-repeat;
+    background: linear-gradient(#7395AE, #7395AE) 50% 85% no-repeat;
     background-size: 50% 3px;
   }
   .contact-nav {
-    border-top: 3px solid #00aff0;
-    border-bottom: 3px solid #00aff0;
+    border-top: 3px solid #7395AE;
+    border-bottom: 3px solid #7395AE;
   }
 }
 
@@ -389,9 +389,112 @@ a {
   text-align: center;
   font-style: "Poppins", sans-serif;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px auto;
+}
+
+.back-to-top a {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.aboutme-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.aboutme-art {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.aboutme-art h1 {
+  color: #7395AE;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 25px 0px;
+}
+
+.aboutme-art p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.aboutme-art a {
+  color: #0066CC;
+}
+
+.aboutme-art a:hover {
+  color: #00478F;
+  text-decoration: underline;
+}
+
+.qualifications {
+  margin-bottom: 30px;
+}
+
+.qualifications h2 {
+  font-size: 1.85rem;
+  font-weight: 500;
+}
+
+.qualifications p {
+  font-size: 1.6rem;
+}
+
+.skills-info {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.skills-info ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .aboutme-art {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutme-art {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .aboutme-art {
+    width: 45%;
+  }
+  .aboutme-art h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin: 55px 0px;
+  }
+  .aboutme-art p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .qualifications h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .qualifications p {
+    font-size: 1.8rem;
+  }
+  .skills-info {
+    font-size: 2rem;
+    margin-bottom: 55px;
+  }
 }

@@ -55,7 +55,7 @@ a {
     .nav-li {
         padding: 15px 0 15px 0;
         &:hover {
-            background:linear-gradient($color-blue,$color-blue) bottom /* left or right or else */ no-repeat;
+            background:linear-gradient($color-blue,$color-blue) 50% 85% no-repeat;
             background-size:50% 3px
         }
     }
