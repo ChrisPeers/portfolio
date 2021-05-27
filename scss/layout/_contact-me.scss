@@ -15,9 +15,10 @@
     font-family: $font-default;
 
     & h2 {
-        font-size: 2.5rem;
-        font-weight: 400;
+        font-size: 4rem;
+        font-weight: 500;
         padding-bottom: 20px;
+        color: $color-green;
     }
 
     & p {
@@ -84,6 +85,10 @@
 @media screen and (max-width: 767px) {
     .contact-me {
         justify-content: center;
+
+        & h2 {
+            text-align: center;
+        }
     }
 }
 
@@ -97,6 +102,10 @@
         flex-basis: 35%;
         margin-left: 15px;
         padding-right: 10px;
+
+        & h2 {
+
+        }
     }
     .contact-form {
         flex-direction: row;

@@ -6,7 +6,93 @@ a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 991px) {
+
+    #burger-menu {
+        opacity:0.01;
+        position: fixed;
+        padding: 30px 30px;
+        // margin: 25px 0px;
+        z-index: 1;
+    }
+    
+    #burger-label{
+        position: fixed;
+        background-color: $color-green;
+        padding: 0px 10px;
+        margin: 10px 0px;
+        // top: 0;
+        // right: 0;
+        color: white;
+        font-size: 3.5rem;
+        z-index: 2;
+    }
+    
+    #burger-menu:checked+#nav-menu{
+        display: flex;
+        border-right: solid 3px $color-green;
+        overflow: hidden;
+        width: 150px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        z-index: 1;
+        background: white;
+        font-family: $font-default;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: center;
+        & h1 {
+            font-size: 5rem;
+            color: $color-green;
+            width: 100%;
+            padding-left: 30px;
+            top: 0;
+            border-bottom: 3px solid $color-green;
+            margin-bottom: 25vh;
+            &:hover {
+                color: $color-green-hvr;
+            }
+        }
+    
+        & ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        & li {
+            padding: 15px 0 15px 0;
+            &:hover {
+                color: $color-green-hvr;
+                background:linear-gradient($color-green,$color-green) 50% 85% no-repeat;
+                background-size:50% 3px
+            }
+        }
+        
+        & li i {
+            padding: 15px 5px 0;
+            color: $color-green;
+            &:hover {
+                color: black;
+            }
+        }
+        & .fab {
+            font-size: 2.5rem;
+        }    
+    }
+
+}
+
 @media screen and (min-width: $large-dev) {
+    #burger-label {
+        display: none;
+    }
+    #burger-menu {
+        display: none;
+    }
     nav {
         display: flex;
         border-right: solid 3px $color-green;
