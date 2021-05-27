@@ -56,6 +56,9 @@ a {
     font-size: 3.5rem;
     z-index: 2;
   }
+  #burger-label:hover {
+    cursor: pointer;
+  }
   #burger-menu:checked + #nav-menu {
     display: flex;
     border-right: solid 3px #116466;
@@ -73,6 +76,7 @@ a {
     font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
+    overflow-y: scroll;
   }
   #burger-menu:checked + #nav-menu h1 {
     font-size: 5rem;
@@ -93,7 +97,7 @@ a {
   #burger-menu:checked + #nav-menu li {
     padding: 15px 0 15px 0;
   }
-  #burger-menu:checked + #nav-menu li:hover {
+  #burger-menu:checked + #nav-menu .nav-li:hover {
     color: #589394;
     background: linear-gradient(#116466, #116466) 50% 85% no-repeat;
     background-size: 50% 3px;
@@ -272,11 +276,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  vertical-align: middle;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
   margin: 15px 15px 15px;
   overflow: hidden;
   background-color: #f4f0ec;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .cards a:hover {
@@ -291,11 +298,17 @@ a {
 }
 
 .cards p {
-  padding: 10px 0px 10px 10px;
+  padding: 10px 0px 0px 10px;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.4rem;
+  line-height: 2rem;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.cards p i {
+  line-height: 2rem;
 }
 
 .cards p:hover {
@@ -430,6 +443,10 @@ a {
   width: 130px;
   height: 35px;
   margin: 10px 0;
+}
+
+.contact-form textarea {
+  resize: none;
 }
 
 @media screen and (max-width: 767px) {

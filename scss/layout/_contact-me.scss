@@ -80,6 +80,10 @@
         height: 35px;
         margin: 10px 0;
     }
+
+    & textarea {
+        resize: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
