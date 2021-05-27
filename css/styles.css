@@ -43,7 +43,7 @@ a {
 @media screen and (min-width: 992px) {
   nav {
     display: flex;
-    border-right: solid 3px #7395AE;
+    border-right: solid 3px #116466;
     overflow: hidden;
     width: 200px;
     height: 100vh;
@@ -55,11 +55,14 @@ a {
   }
   nav h1 {
     font-size: 8rem;
-    color: #7395AE;
+    color: #116466;
     width: 100%;
     margin: 0 auto;
     top: 0;
-    border-bottom: 3px solid #7395AE;
+    border-bottom: 3px solid #116466;
+  }
+  nav h1:hover {
+    color: #589394;
   }
   .nav-menu {
     list-style: none;
@@ -76,7 +79,7 @@ a {
   }
   .nav-menu li i {
     padding: 15px 5px 0;
-    color: #7395AE;
+    color: #116466;
   }
   .nav-menu li i:hover {
     color: black;
@@ -88,12 +91,13 @@ a {
     padding: 15px 0 15px 0;
   }
   .nav-li:hover {
-    background: linear-gradient(#7395AE, #7395AE) 50% 85% no-repeat;
+    color: #589394;
+    background: linear-gradient(#116466, #116466) 50% 85% no-repeat;
     background-size: 50% 3px;
   }
   .contact-nav {
-    border-top: 3px solid #7395AE;
-    border-bottom: 3px solid #7395AE;
+    border-top: 3px solid #116466;
+    border-bottom: 3px solid #116466;
   }
 }
 
@@ -414,7 +418,7 @@ a {
 }
 
 .aboutme-art h1 {
-  color: #7395AE;
+  color: #116466;
   text-align: center;
   font-size: 4rem;
   font-weight: 500;
@@ -496,5 +500,110 @@ a {
   .skills-info {
     font-size: 2rem;
     margin-bottom: 55px;
+  }
+}
+
+.coding-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.coding-info {
+  margin: 20% auto;
+  width: 90%;
+}
+
+.coding-info h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #116466;
+}
+
+.scs-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.scs-art {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.scs-art h1 {
+  color: #116466;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 25px 0px 70px;
+}
+
+.scs-info {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.scs-info h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #116466;
+  margin-bottom: 25px;
+}
+
+.scs-info p {
+  font-weight: 400;
+}
+
+.scs-info h3 {
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.scs-info a {
+  color: #0066CC;
+}
+
+.scs-info a:hover {
+  color: #00478F;
+  text-decoration: underline;
+}
+
+#profile {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 576px) {
+  .scs-art {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scs-art {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .scs-art {
+    width: 45%;
+  }
+  .scs-art h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin: 55px 0px;
+  }
+  .scs-info {
+    margin: 50px 0;
+    font-size: 2rem;
+  }
+  .scs-info h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 50px;
   }
 }

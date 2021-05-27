@@ -9,7 +9,7 @@ a {
 @media screen and (min-width: $large-dev) {
     nav {
         display: flex;
-        border-right: solid 3px $color-blue;
+        border-right: solid 3px $color-green;
         overflow: hidden;
         width: 200px;
         height: 100vh;
@@ -20,11 +20,14 @@ a {
         text-align: center;
         & h1 {
             font-size: 8rem;
-            color: $color-blue;
+            color: $color-green;
             width: 100%;
             margin: 0 auto;
             top: 0;
-            border-bottom: 3px solid $color-blue;
+            border-bottom: 3px solid $color-green;
+            &:hover {
+                color: $color-green-hvr;
+            }
         }
     }
 
@@ -42,7 +45,7 @@ a {
         font-size: 1.4rem;
         & li i {
             padding: 15px 5px 0;
-            color: $color-blue;
+            color: $color-green;
             &:hover {
                 color: black;
             }
@@ -55,14 +58,14 @@ a {
     .nav-li {
         padding: 15px 0 15px 0;
         &:hover {
-            background:linear-gradient($color-blue,$color-blue) 50% 85% no-repeat;
+            color: $color-green-hvr;
+            background:linear-gradient($color-green,$color-green) 50% 85% no-repeat;
             background-size:50% 3px
         }
     }
     
-    
     .contact-nav {
-        border-top: 3px solid $color-blue;
-        border-bottom: 3px solid $color-blue;
+        border-top: 3px solid $color-green;
+        border-bottom: 3px solid $color-green;
     }
 }

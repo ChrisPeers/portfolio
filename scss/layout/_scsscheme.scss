@@ -1,25 +1,42 @@
-.aboutme-section {
+
+.scs-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: $font-default;
 }
 
-.aboutme-art {
+.scs-art {
     margin: 0 auto;
     width: 90%;
-
     & h1 {
         color: $color-green;
         text-align: center;
         font-size: 4rem;
         font-weight: 500;
-        margin: 25px 0px;
+        margin: 25px 0px 70px;
+    }
+}
+
+
+.scs-info {
+    margin-bottom: 30px;
+    font-size: 1.6rem; 
+    
+    & h2 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: $color-green;
+        margin-bottom: 25px;
     }
 
     & p {
-        font-size: 1.6rem;
         font-weight: 400;
+    }
+
+    & h3 {
+        margin: 20px 0;
+        font-weight: 500;
     }
 
     & a {
@@ -31,44 +48,24 @@
     }
 }
 
-.qualifications {
-    margin-bottom: 30px;
-    & h2 {
-        font-size: 1.85rem;
-        font-weight: 500;
-    }
-    & p {
-        font-size: 1.6rem; 
-    }
-}
-
-.skills-info {
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 40px;
-
-    & ul {
-        list-style-position: inside;
-        padding-left: 0;
-        margin-left: 0px;
-    }
-
+#profile {
+    font-weight: 500;
 }
 
 @media screen and (min-width: $small-dev) {
-    .aboutme-art {
+    .scs-art {
         width: 70%;
     }
 }
 
 @media screen and (min-width: $med-dev) {
-    .aboutme-art {
+    .scs-art {
         width: 60%;
     }
 }
 
 @media screen and (min-width: $large-dev) {
-    .aboutme-art {
+    .scs-art {
         width: 45%;
     
         & h1 {
@@ -76,26 +73,15 @@
             font-weight: 500;
             margin: 55px 0px;
         }
-    
-        & p {
-            font-size: 2rem;
-            font-weight: 400;
-        }
     }
 
-    .qualifications {
+    .scs-info {
+        margin: 50px 0;
+        font-size: 2rem; 
         & h2 {
-            font-size: 2.4rem;
+            font-size: 3.2rem;
             font-weight: 500;
-            margin-bottom: 10px;
+            margin-bottom: 50px;
         }
-        & p {
-            font-size: 1.8rem; 
-        }
-    }
-
-    .skills-info {
-        font-size: 2rem;
-        margin-bottom: 55px;
     }
 }
