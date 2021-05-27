@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px auto;
+    
+    &:hover {
+        transform: scale(1.2);
+    }
 
     & a {
         font-size: 1.7rem;

@@ -45,6 +45,10 @@
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+
+        &:hover {
+            transform: scale(1.2);
+        }
         
     }
 }
