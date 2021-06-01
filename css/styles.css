@@ -60,7 +60,6 @@ a {
     cursor: pointer;
   }
   #burger-menu:checked + #nav-menu {
-    display: flex;
     border-right: solid 3px #116466;
     overflow: hidden;
     width: 150px;
@@ -78,16 +77,16 @@ a {
     text-align: center;
     overflow-y: scroll;
   }
-  #burger-menu:checked + #nav-menu h1 {
+  #burger-menu:checked + #nav-menu h2 {
     font-size: 5rem;
     color: #116466;
     width: 100%;
     padding-left: 50px;
     top: 0;
     border-bottom: 3px solid #116466;
-    margin-bottom: 25vh;
+    margin-bottom: 25px;
   }
-  #burger-menu:checked + #nav-menu h1:hover {
+  #burger-menu:checked + #nav-menu h2:hover {
     color: #589394;
   }
   #burger-menu:checked + #nav-menu ul {
@@ -133,15 +132,15 @@ a {
     flex-direction: column;
     text-align: center;
   }
-  nav h1 {
+  nav h2 {
     font-size: 8rem;
     color: #116466;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     top: 0;
     border-bottom: 3px solid #116466;
   }
-  nav h1:hover {
+  nav h2:hover {
     color: #589394;
   }
   .nav-menu {
@@ -150,7 +149,6 @@ a {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -526,7 +524,7 @@ a {
   width: 90%;
 }
 
-.aboutme-art h1 {
+.aboutme-art h1, .aboutme-art h2 {
   color: #116466;
   text-align: center;
   font-size: 4rem;
@@ -552,7 +550,7 @@ a {
   margin-bottom: 30px;
 }
 
-.qualifications h2 {
+.qualifications h3 {
   font-size: 1.85rem;
   font-weight: 500;
 }
@@ -589,7 +587,7 @@ a {
   .aboutme-art {
     width: 45%;
   }
-  .aboutme-art h1 {
+  .aboutme-art h1, .aboutme-art h2 {
     font-size: 4.5rem;
     font-weight: 500;
     margin: 55px 0px;
@@ -598,7 +596,7 @@ a {
     font-size: 2rem;
     font-weight: 400;
   }
-  .qualifications h2 {
+  .qualifications h3 {
     font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: 10px;

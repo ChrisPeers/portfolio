@@ -32,7 +32,6 @@ a {
     }
     
     #burger-menu:checked+#nav-menu{
-        display: flex;
         border-right: solid 3px $color-green;
         overflow: hidden;
         width: 150px;
@@ -49,14 +48,14 @@ a {
         font-size: 1.2rem;
         text-align: center;
         overflow-y:scroll;
-        & h1 {
+        & h2 {
             font-size: 5rem;
             color: $color-green;
             width: 100%;
             padding-left: 50px;
             top: 0;
             border-bottom: 3px solid $color-green;
-            margin-bottom: 25vh;
+            margin-bottom: 25px;
             &:hover {
                 color: $color-green-hvr;
             }
@@ -111,11 +110,11 @@ a {
         display: flex;
         flex-direction: column;
         text-align: center;
-        & h1 {
+        & h2 {
             font-size: 8rem;
             color: $color-green;
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto 25px;
             top: 0;
             border-bottom: 3px solid $color-green;
             &:hover {
@@ -130,7 +129,7 @@ a {
         padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         height: 100%;
         margin: 0;  
         font-family: $font-default;
