@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Chris Peers - Coding Experience</title>
+    <title>Chris Peers - Coding Examples</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
     <script src="https://kit.fontawesome.com/c27877a5b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <ul class="nav-menu">
             <li class="nav-li"><a href="aboutme.html">About Me</a></li>
             <li class="nav-li"><a href="index.html#projects">My Portfolio</a></li>
-            <li class="nav-li"><a href="codingexp.html">Coding Experience</a></li>
+            <li class="nav-li"><a href="codingex.html">Coding Examples</a></li>
             <li class="nav-li"><a href="scs-scheme.html">SCS Scheme</a></li>
             <li class="contact-nav nav-li"><a href="index.html#contact-me">Contact Me</a></li>
             <li>
@@ -33,7 +34,35 @@
     <main>
         <div class="coding-section">
             <div class="coding-info">
-                <h1>Coming Soon</h1>
+                <h1>Coding Examples</h1>
+
+                <div class="coding-container">
+                    <div class="example example-1">
+                        <h2>Basic JavaScript Example</h2>
+                        <div class="coding-box">
+                            <pre>
+                                <code>const textH2 = document.getElementById("hero-h2");
+const text = "I'm a Web Developer";
+const speed = 50;
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        textH2.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+typeWriter();
+                                </code>
+                            </pre>
+                        </div>
+                        <h3>Typewritter Effect</h3>
+                        <p>The code above shows a basic function that was used to add a typewriting effect to part of the heading on the main page of this portfolio.</p>
+                    </div>
+                </div>
+
             </div> 
         </div>
     </main>

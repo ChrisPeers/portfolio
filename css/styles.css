@@ -726,7 +726,7 @@ a {
 }
 
 .coding-info {
-  margin: 20% auto;
+  margin: 5% auto;
   width: 90%;
 }
 
@@ -735,6 +735,51 @@ a {
   font-size: 4rem;
   font-weight: 500;
   color: #116466;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.coding-section h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #116466;
+  margin: 25px 0 15px;
+}
+
+.coding-section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #116466;
+  margin-bottom: 25px;
+}
+
+.coding-section p {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .coding-section h2 {
+    font-size: 3rem;
+  }
+  .coding-section h3 {
+    font-size: 2.5rem;
+  }
+  .coding-section p {
+    font-size: 2rem;
+  }
 }
 
 .scs-section {
