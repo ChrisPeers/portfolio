@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.hidden-project-text {
+    display: none;
+}
+
 .cards {
     width: 90%;
     // max-width: 550px;
@@ -59,12 +63,23 @@
         width: 100%;
         // max-width: 550px;
         height: auto;
+        // max-height: 355px;
 
         &:hover {
             opacity: 0.5;
         }
+
+        &:hover ~ .hidden-project-text {
+            position: absolute;
+            display: block;
+            width: 300px;
+            // margin: 100px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     }
 }
+
+
 
 @media screen and (min-width: $small-dev) and (max-width: 767px) {
     .cards {

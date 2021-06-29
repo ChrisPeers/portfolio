@@ -307,6 +307,10 @@ a {
   justify-content: center;
 }
 
+.hidden-project-text {
+  display: none;
+}
+
 .cards {
   width: 90%;
   display: flex;
@@ -358,6 +362,13 @@ a {
 
 .cards img:hover {
   opacity: 0.5;
+}
+
+.cards img:hover ~ .hidden-project-text {
+  position: absolute;
+  display: block;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
