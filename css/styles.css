@@ -390,6 +390,14 @@ a {
   }
 }
 
+@media screen and (min-width: 285px) and (max-width: 430px) {
+  .cards:hover .hidden-project-text {
+    font-size: 1.15rem;
+    height: 50%;
+    width: 70%;
+  }
+}
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .cards h2 {
     font-size: 3rem;

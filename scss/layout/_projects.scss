@@ -102,7 +102,17 @@
     }
 }
 
+@media screen and (min-width: 285px) and (max-width: 430px) {
+    .cards {
+        &:hover .hidden-project-text {
+            font-size: 1.15rem;
+            height: 50%;
+            width: 70%;
+        }
 
+    }
+
+}
 
 @media screen and (min-width: $small-dev) and (max-width: 767px) {
     .cards {
