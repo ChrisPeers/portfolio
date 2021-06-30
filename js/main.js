@@ -1,6 +1,6 @@
 const textH2 = document.getElementById("hero-h2");
 const text = "I'm a Web Developer";
-const speed = 50;
+const speed = 100;
 let i = 0;
 
 function typeWriter() {
