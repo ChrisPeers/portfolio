@@ -43,7 +43,7 @@
                             <pre>
                                 <code>const textH2 = document.getElementById("hero-h2");
 const text = "I'm a Web Developer";
-const speed = 50;
+const speed = 100;
 let i = 0;
 
 function typeWriter() {
@@ -59,7 +59,48 @@ typeWriter();
                             </pre>
                         </div>
                         <h3>Typewritter Effect</h3>
-                        <p>The code above shows a basic function that was used to add a typewriting effect to part of the heading on the main page of this portfolio.</p>
+                        <p>The code above shows a basic function that was used to add a typewriting effect to part of the heading on the main page of this portfolio. The below Gif shows what it looks like when it runs.</p>
+                    </div>
+
+                    <img src="/images/codeExampleOne.gif" alt="Gif showing the typewriter and cursor effect"  class="gifExample"/>
+
+                    <div class="example example-2">
+                        <h2>Basic CSS Example</h2>
+                        
+                        <div class="coding-box">
+                            <pre>
+                                <code>@keyframes blink {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero {
+
+    & h2 {
+        padding-top: 20px;
+        font-size: 2.3rem;
+    }
+
+    & h2::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        animation: blink 0.8s infinite ease;
+        height: 2rem;
+        margin: 8px 0 0 2px;
+        border-right: 3px solid white;
+    }
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <h3>Blinking Cursor Effect</h3>
+                        <p>The code above shows basic CSS that I created to make a blinking cursor effect on part of the heading on the main page of this portfolio. The gif above shows what this looks like.</p>
                     </div>
                 </div>
 

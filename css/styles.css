@@ -75,7 +75,7 @@ a {
     font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   #burger-menu:checked + #nav-menu h2 {
     font-size: 5rem;
@@ -774,6 +774,12 @@ pre code {
   font-size: 1.3rem;
 }
 
+.gifExample {
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+}
+
 @media screen and (min-width: 992px) {
   .coding-section h2 {
     font-size: 3rem;
@@ -783,6 +789,9 @@ pre code {
   }
   .coding-section p {
     font-size: 2rem;
+  }
+  .gifExample {
+    width: 40%;
   }
 }
 
