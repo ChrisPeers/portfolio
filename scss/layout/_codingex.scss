@@ -32,7 +32,7 @@ pre code {
 }
 
 .coding-section {
-
+    
     & h2 {
         font-size: 2.6rem;
         font-weight: 500;
@@ -50,6 +50,27 @@ pre code {
     & p {
         font-size: 1.3rem;
     }
+
+    & a {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.example-menu {
+    & a {
+        font-size: 1.6rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
 }
 
 .gifExample {
@@ -58,10 +79,30 @@ pre code {
     width: 70%;
 }
 
+img {
+    display: block;
+    margin: 30px auto;
+    width: 95%;
+}
+
+.empty-div {
+    height: 100px;
+}
+
+
+
 @media screen and (min-width: $small-dev) {
 
     .coding-info {
         width: 70%;
+    }
+
+    img {
+        width: 70%;
+    }
+
+    .empty-div {
+        height: 125px;
     }
 }
 
@@ -69,6 +110,14 @@ pre code {
 
     .coding-info {
         width: 60%;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    .empty-div {
+        height: 150px;
     }
 }
 
@@ -88,10 +137,23 @@ pre code {
             font-size: 2rem;
         }
 
+        & a {
+            font-size: 1.9rem;
+            font-weight: 500;
+        }
+
     }
 
     .gifExample {
         width: 80%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .empty-div {
+        height: 200px;
     }
 }
 

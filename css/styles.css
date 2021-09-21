@@ -782,21 +782,61 @@ pre code {
   font-size: 1.3rem;
 }
 
+.coding-section a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: blue;
+}
+
+.coding-section a:hover {
+  text-decoration: underline;
+}
+
+.example-menu a {
+  font-size: 1.6rem;
+}
+
+.example-menu a:hover {
+  text-decoration: underline;
+}
+
 .gifExample {
   display: block;
   margin: 30px auto;
   width: 70%;
 }
 
+img {
+  display: block;
+  margin: 30px auto;
+  width: 95%;
+}
+
+.empty-div {
+  height: 100px;
+}
+
 @media screen and (min-width: 576px) {
   .coding-info {
     width: 70%;
+  }
+  img {
+    width: 70%;
+  }
+  .empty-div {
+    height: 125px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .coding-info {
     width: 60%;
+  }
+  img {
+    width: 60%;
+  }
+  .empty-div {
+    height: 150px;
   }
 }
 
@@ -810,8 +850,18 @@ pre code {
   .coding-section p {
     font-size: 2rem;
   }
+  .coding-section a {
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
   .gifExample {
     width: 80%;
+  }
+  img {
+    width: 80%;
+  }
+  .empty-div {
+    height: 200px;
   }
 }
 
