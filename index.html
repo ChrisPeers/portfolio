@@ -88,13 +88,13 @@
                 <p>Alternatively, you can contact me via the contact form and I will aim to get back to you within two working days.</p>
             </div>
             <!-- Contact Form -->
-            <form class="contact-form">
-                <input type="text" class="name" id="name" name="name" placeholder="Name*" required>
-                <input type="text" class="cont-number" id="cont-number" name="cont-number" placeholder="Contact Number">
-                <input type="text" class="email" id="email" name="email" placeholder="Email Address*" required>
+            <form name ="contactForm" class="contact-form" method="get" action="#contact-me" onsubmit="var temp = validateForm(); var temp1 = validatePhone(); var temp2 = validateEmail(); return temp;">
+                <input type="text" class="name" id="name" name="name" placeholder="Name*" > //required
+                <input type="text" class="cont-number" id="cont-number" name="cont-number" placeholder="Contact Number" onkeypress="return isNumber(event)">
+                <input type="text" class="email" id="email" name="email" placeholder="Email Address*" > //required
                 <input type="text" class="subject" id="subject" name="subject" placeholder="Subject">
-                <textarea class="message" id="message" name="message" placeholder="Message*" cols="50" rows="4" required></textarea>
-                <input type="submit"  value="Submit" class="submit">
+                <textarea class="message" id="message" name="message" placeholder="Message*" cols="50" rows="4" ></textarea> //required
+                <button type="submit"  value="Submit" class="submit">Submit</button>
             </form>
         </section>
 

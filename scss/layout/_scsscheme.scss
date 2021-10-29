@@ -52,6 +52,14 @@
     font-weight: 500;
 }
 
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    .scs-art {
+        & h1 {
+            margin-top: 60px;
+        }
+    }
+}
+
 @media screen and (min-width: $small-dev) {
     .scs-art {
         width: 70%;
