@@ -23,14 +23,16 @@ function validateForm() {
         alert("The Email field must be filled out");
         return false;
     } else if (c == "") {
-      alert("The Message field must be filled out");
-      return false;
+        alert("The Message field must be filled out");
+        return false;
+    } else {
+        return true;
     }
 } 
 
 function isNumber(evt) {
     evt = (evt) ? evt : window.event;
-    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    let charCode = (evt.which) ? evt.which : evt.keyCode;
     if (charCode > 31 && (charCode < 48 || charCode > 57)) {
         alert("Please enter only Numbers.");
         return false;
@@ -41,30 +43,61 @@ function isNumber(evt) {
 
 function validatePhone() {
 
-    var phone = document.getElementById('cont-number').value;
+    let phone = document.getElementById('cont-number').value;
+
+    let temp = true;
     
 
     if((phone.length > 0) && phone.length < 10 || phone.length > 20) {
         alert('Incorrect amount of phone digits.');
-        return false;
+        temp = false;
+        return temp;
     }
   
     if(phone.length > 0 && !phone.match(/^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g)) {
         alert('Please enter normal phone digits only.');
-        return false;
+        temp = false;
+        return temp;
     }
+
+    return temp;
   }
 
   function validateEmail() {
 
-    var email = document.getElementById('email').value;
+    let email = document.getElementById('email').value;
 
     if(email.length > 0 && !email.match(/^\S+@\S+\.\S+$/)) {
   
         alert('Email Invalid');
         return false;
+    } else {
+        return true;
     }
   }
+
+  function validate() {
+      let validated = true;
+
+    if (!validateForm()) {
+        validated = false;
+        console.log(validated + "  form validation");
+        
+    }
+    if (!validateEmail()) {
+        validated = false;
+        console.log(validated + "  email validation");
+        
+    }
+    if (!validatePhone()) {
+        validated = false;
+        console.log(validated + "  phone validation");
+        
+    }
+        console.log(validated);
+        return validated;
+  }
+
   
 
 
