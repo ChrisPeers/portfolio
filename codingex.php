@@ -5,31 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Chris Peers - Coding Examples</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="icon" type="image/png" href="/images/favicon.ico">
-    <script src="https://kit.fontawesome.com/c27877a5b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
 
-    <!-- Side Navigation Menu -->
-    <label for="burger-menu" id="burger-label"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="burger-menu"/>
-    <nav id="nav-menu">
-        <a href="index.html"><h2>CP</h2></a>
-        <ul class="nav-menu">
-            <li class="nav-li"><a href="aboutme.html">About Me</a></li>
-            <li class="nav-li"><a href="index.html#projects">My Portfolio</a></li>
-            <li class="nav-li"><a href="codingex.html">Coding Examples</a></li>
-            <li class="nav-li"><a href="scs-scheme.html">SCS Scheme</a></li>
-            <li class="contact-nav nav-li"><a href="index.html#contact-me">Contact Me</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/christopher-peers-360a8380/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
-            </li>
-        </ul>
-    </nav>
+    <!-- Include the header and side menu with php -->
+    <?php include("inc/headerSideMenu.php"); ?>
 
     <main>
         <div class="coding-section">
@@ -76,7 +54,7 @@ typeWriter();
                     <div class="example example-2" id="example-2"></div>
 
                         <h2>Basic CSS Example</h2>
-                        <img src="/images/codeExampleOne.gif" alt="Gif showing the typewriter and cursor effect"  class="gifExample"/>
+                        <img src="images/codeExampleOne.gif" alt="Gif showing the typewriter and cursor effect"  class="gifExample"/>
                     
                         <div class="coding-box">
                             <pre>
@@ -119,7 +97,7 @@ typeWriter();
                     <div class="example example-3" id="example-3">
                         <h2>Oracle SQL Example</h2>
 
-                        <img src="/images/TopDownErd.png" alt="Top Down ERD">
+                        <img src="images/TopDownErd.png" alt="Top Down ERD">
                         <a href="https://drive.google.com/drive/folders/1ZgC3D_BGzuUaxmxnHcatJ2cyhAu88JEH?usp=sharing">Click Me to view the SQL Schema, ERD and Results Images</a>
                         <div class="coding-box">
                             <pre>
@@ -130,7 +108,7 @@ typeWriter();
                                     
                                 </code>
                             </pre>
-                            <img src="/images/SqlCodeExample.png" alt="SQL Code Example">
+                            <img src="images/SqlCodeExample.png" alt="SQL Code Example">
                         </div>
                         <h3>SQL Query</h3>
                         <p>The above examples show an SQL database that I created during University. It was part of a group project and I was in charge of the SQL.
@@ -143,13 +121,6 @@ typeWriter();
 
             </div> 
         </div>
-    </main>
 
-    <!-- Back to top button -->
-    <section class="back-to-top">
-        <a href="#top"><i class="fas fa-chevron-up"></i><br>Back To Top</a>
-    </section>
-    
-    <script src="js/main.js"></script>
-</body>
-</html>
+    <!-- Include the header and side menu with php -->
+    <?php include("inc/footer.php"); ?>

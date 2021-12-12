@@ -5,31 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Chris Peers - SCS Scheme</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="icon" type="image/png" href="/images/favicon.ico">
-    <script src="https://kit.fontawesome.com/c27877a5b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-    <!-- Side Navigation Menu -->
-    <label for="burger-menu" id="burger-label"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="burger-menu"/>
-    <nav id="nav-menu">
-        <a href="index.html"><h2>CP</h2></a>
-        <ul class="nav-menu">
-            <li class="nav-li"><a href="aboutme.html">About Me</a></li>
-            <li class="nav-li"><a href="index.html#projects">My Portfolio</a></li>
-            <li class="nav-li"><a href="codingex.html">Coding Examples</a></li>
-            <li class="nav-li"><a href="scs-scheme.html">SCS Scheme</a></li>
-            <li class="contact-nav nav-li"><a href="index.html#contact-me">Contact Me</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/christopher-peers-360a8380/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
-            </li>
-        </ul>
-    </nav>
+    
+    <!-- Include the header and side menu with php -->
+    <?php include("inc/headerSideMenu.php"); ?>
 
     <main>
         <!-- SCS Scheme Section -->
@@ -50,7 +28,7 @@
                     </br>   
                     <p id="profile">Profile:</p>
                     <a href="https://teamtreehouse.com/chrispeers2" target="_blank">teamtreehouse.com/chrispeers2</a>
-                    <h3>Total Score: 17,654</h3>
+                    <h3>Total Score: 18,999</h3>
                 </div>
                 <div class="scs-info">
                     <h2>About Netmatters</h2>
@@ -69,13 +47,5 @@
 
         </section>
 
-        <!-- Back to top button -->
-        <section class="back-to-top">
-            <a href="#top"><i class="fas fa-chevron-up"></i></br>Back To Top</a>
-        </section>
-
-        
-    </main>
-    <script src="js/main.js"></script>
-</body>
-</html>
+    <!-- Include the header and side menu with php -->
+    <?php include("inc/footer.php"); ?>
