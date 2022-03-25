@@ -2,7 +2,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
     <script src="https://kit.fontawesome.com/c27877a5b9.js" crossorigin="anonymous"></script>
 </head>
 <body>

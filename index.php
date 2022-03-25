@@ -31,17 +31,19 @@
                 <h2>Recreate Netmatters</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
-            <a class="cards card-2" href="#">
-                <img src="images/placeholder.jpg" alt="Placeholder Image">
-                <h2>Project Two</h2>
+            <a class="cards card-2" href="https://github.com/ChrisPeers/jsReflectionPart2" target="_blank">
+                <img src="images/projectJavascript.png" alt="Screenshot of Javascript Project homepage">
+                <p class="hidden-project-text">For this project I had to use JavaScript and a Plugin to load random images and asign them to emails.</p>
+                <h2>JavaScript Project</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
-            <a class="cards card-3" href="#">
-                <img src="images/placeholder.jpg" alt="Placeholder Image">
-                <h2>Project Three</h2>
+            <a class="cards card-3" href="https://github.com/ChrisPeers/portfolio" target="_blank">
+                <img src="images/projectPortfolio.png" alt="Screenshot of this Portfolio Web Page">
+                <p class="hidden-project-text">For this project I created my personal portfolio which you are currently on. Click view project to visit the GitHub page.</p>
+                <h2>Personal Portfolio</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
-            <a class="cards card-4" href="#">
+            <!-- <a class="cards card-4" href="#">
                 <img src="images/placeholder.jpg" alt="Placeholder Image">
                 <h2>Project Four</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
@@ -55,7 +57,7 @@
                 <img src="images/placeholder.jpg" alt="Placeholder Image">
                 <h2>Project Six</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
-            </a>
+            </a> -->
         </div>
         <!-- Contact Me Section -->
         <section class="contact-section" id="contact-me">
