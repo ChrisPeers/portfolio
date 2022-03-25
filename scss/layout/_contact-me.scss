@@ -31,12 +31,12 @@
     & a {
         padding-bottom: 20px;
         text-decoration: underline;
-        color: $color-blue-link;
+        color: $color-green;
         font-size: 1.7rem;
         font-weight: 500;
         width: 260px;
         &:hover {
-            color: $color-blue-link-hvr;
+            color: $color-green-hvr;
         }
     }
 }

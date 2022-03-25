@@ -187,7 +187,7 @@ a {
 
 .hero {
   height: 100vh;
-  background-image: url(../../images/hero-image.jpg);
+  background-image: url(../images/hero-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -301,6 +301,7 @@ a {
 
 .projects {
   padding-top: 35px;
+  padding-bottom: 35px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -510,14 +511,14 @@ a {
 .contact-me a {
   padding-bottom: 20px;
   text-decoration: underline;
-  color: #0066CC;
+  color: #116466;
   font-size: 1.7rem;
   font-weight: 500;
   width: 260px;
 }
 
 .contact-me a:hover {
-  color: #00478F;
+  color: #589394;
 }
 
 .contact-form {
@@ -658,11 +659,11 @@ a {
 }
 
 .aboutme-art a {
-  color: #0066CC;
+  color: #116466;
 }
 
 .aboutme-art a:hover {
-  color: #00478F;
+  color: #589394;
   text-decoration: underline;
 }
 
@@ -794,10 +795,12 @@ pre code {
 
 .example-menu a {
   font-size: 1.6rem;
+  color: #116466;
+  text-decoration: underline;
 }
 
 .example-menu a:hover {
-  text-decoration: underline;
+  color: #589394;
 }
 
 .gifExample {
@@ -913,11 +916,11 @@ img {
 }
 
 .scs-info a {
-  color: #0066CC;
+  color: #116466;
 }
 
 .scs-info a:hover {
-  color: #00478F;
+  color: #589394;
   text-decoration: underline;
 }
 

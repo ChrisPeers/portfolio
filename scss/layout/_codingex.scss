@@ -65,9 +65,11 @@ pre code {
 .example-menu {
     & a {
         font-size: 1.6rem;
+        color: $color-green;
+        text-decoration: underline;
 
         &:hover {
-            text-decoration: underline;
+            color: $color-green-hvr;
         }
     }
     

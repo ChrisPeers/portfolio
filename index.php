@@ -5,31 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Chris Peers - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="icon" type="image/png" href="/images/favicon.ico">
-    <script src="https://kit.fontawesome.com/c27877a5b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
 
-    <!-- Side Navigation Menu -->
-    <label for="burger-menu" id="burger-label"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="burger-menu"/>
-    <nav id="nav-menu">
-        <a href="index.html"><h2>CP</h2></a>
-        <ul class="nav-menu">
-            <li class="nav-li"><a href="aboutme.html">About Me</a></li>
-            <li class="nav-li"><a href="index.html#projects">My Portfolio</a></li>
-            <li class="nav-li"><a href="codingex.html">Coding Examples</a></li>
-            <li class="nav-li"><a href="scs-scheme.html">SCS Scheme</a></li>
-            <li class="contact-nav nav-li"><a href="#contact-me">Contact Me</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/christopher-peers-360a8380/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ChrisPeers" target="_blank"><i class="fab fa-github-square"></i></a>
-            </li>
-        </ul>
-    </nav>
+    <!-- Include the header and side menu with php -->
+    <?php include("inc/headerSideMenu.php"); ?>
 
     <main>
         <!-- Main Hero Image Banner -->
@@ -48,36 +26,38 @@
         <!-- Project Section -->
         <div class="projects" id="projects">
             <a class="cards card-1" href="https://netmatters.christopher-peers.netmatters-scs.co.uk/" target="_blank">
-                <img src="/images/projectNetmatters.png" alt="Screenshot of Netmatters Home Page">
+                <img src="images/projectNetmatters.png" alt="Screenshot of Netmatters Home Page">
                 <p class="hidden-project-text">For this project I had to recreate the Netmatters home page visually. It was one of the first projects I did and I learnt a lot from it.</p>
                 <h2>Recreate Netmatters</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
-            <a class="cards card-2" href="#">
-                <img src="/images/placeholder.jpg" alt="Placeholder Image">
-                <h2>Project Two</h2>
+            <a class="cards card-2" href="https://github.com/ChrisPeers/jsReflectionPart2" target="_blank">
+                <img src="images/projectJavascript.png" alt="Screenshot of Javascript Project homepage">
+                <p class="hidden-project-text">For this project I had to use JavaScript and a Plugin to load random images and asign them to emails.</p>
+                <h2>JavaScript Project</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
-            <a class="cards card-3" href="#">
-                <img src="/images/placeholder.jpg" alt="Placeholder Image">
-                <h2>Project Three</h2>
+            <a class="cards card-3" href="https://github.com/ChrisPeers/portfolio" target="_blank">
+                <img src="images/projectPortfolio.png" alt="Screenshot of this Portfolio Web Page">
+                <p class="hidden-project-text">For this project I created my personal portfolio which you are currently on. Click view project to visit the GitHub page.</p>
+                <h2>Personal Portfolio</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
-            <a class="cards card-4" href="#">
-                <img src="/images/placeholder.jpg" alt="Placeholder Image">
+            <!-- <a class="cards card-4" href="#">
+                <img src="images/placeholder.jpg" alt="Placeholder Image">
                 <h2>Project Four</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
             <a class="cards card-5" href="#">
-                <img src="/images/placeholder.jpg" alt="Placeholder Image">
+                <img src="images/placeholder.jpg" alt="Placeholder Image">
                 <h2>Project Five</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
             </a>
             <a class="cards card-6" href="#">
-                <img src="/images/placeholder.jpg" alt="Placeholder Image">
+                <img src="images/placeholder.jpg" alt="Placeholder Image">
                 <h2>Project Six</h2>
                 <p>View Project <i class="fas fa-arrow-right"></i></p>
-            </a>
+            </a> -->
         </div>
         <!-- Contact Me Section -->
         <section class="contact-section" id="contact-me">
@@ -98,15 +78,5 @@
             </form>
         </section>
 
-        <!-- Back to top button -->
-        <section class="back-to-top">
-            <a href="#top"><i class="fas fa-chevron-up"></i><br>Back To Top</a>
-        </section>
-
-        
-    </main>
-    <script src="js/main.js"></script>
-</body>
-</html>
-
-<!-- var temp = validateForm(); var temp1 = validatePhone(); var temp2 = validateEmail(); return temp; -->
+        <!-- Include the header and side menu with php -->
+        <?php include("inc/footer.php"); ?>
